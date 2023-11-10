@@ -27,5 +27,5 @@ from equipos.views import index, cargar_equipo, lista_equipos
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("equipos/", include("equipos.urls")),
-    path("", index),
+    path("index/", index, name="index"),
 ]
